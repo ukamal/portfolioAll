@@ -1,0 +1,319 @@
+/******************
+Start of global classes
+*******************/
+.section{
+    padding: 90px 0;
+}
+/**********End of global classes**********/
+
+.loader{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.loader .inner{
+    height: 100%;
+    width: 100%;
+    background: url("assets/img/icons/loader.gif") center center no-repeat;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    z-index: 4;
+}
+.slides-navigation{
+    z-index: 6;
+}
+.slides-navigation .prev,
+.slides-navigation .next{
+    height: 47px;
+    width: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.slides-navigation a.prev{
+    background-image: url("assets/img/icons/prev.png");
+    left: 25px;
+}
+.slides-navigation a.next{
+    background-image: url("assets/img/icons/next.png");
+    right: 25px;
+}
+div.title h1{
+    color: #fff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
+    margin-top: 150px;
+}
+.titleMessage{
+    position: absolute;
+    top: 40%;
+    height: 150px;
+    width: 100%;
+    color: #ffffff;
+    z-index: 4;
+    text-align: center;
+}
+.heading h1.main{
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+.heading p.sub{
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+/*****************************
+End of Slider area
+*****************************/
+.navbar{
+    position: static;
+    background: rgba(246, 71, 71, 1);
+}
+nav.navbar a {
+    color: #fff;
+    text-transform: uppercase;
+}
+nav.navbar a:hover{
+    color: #000000;
+    transition: 1s;
+}
+.navbar-toggler-icon{
+    background-image: url("assets/img/icons/menu.png");
+    background-size: 100%;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+
+/***************************
+End of navbar area
+****************************/
+
+#about{
+   
+}
+.card{
+    border: none;
+}
+/*************************
+End of about-area
+**************************/
+
+#skills{
+    background: rgba(246, 71, 71, 1);
+    color: #fff;
+}
+span.chart {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+span.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+}
+
+.skill {
+    text-align: center;
+    margin-left: 10px;
+}
+.owl-carousel {
+    padding: 30px 0;
+}
+
+span.chart .percent {
+    color: #000;
+    line-height: 150px;
+    font-size: 35px;
+    display: inline-block;
+}
+
+span.chart .percent:after {
+    content: "%";
+}
+/*************************
+End of skills-area
+**************************/
+
+#contact{
+    background: rgba(246, 71, 71, 1);
+    color: #fff;
+}
+div#contact button:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    color: rgba(246, 71, 71, 1);
+    transition: 0.1s;
+}
+
+div#contact button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+/*************************
+End of contact-area
+**************************/
+
+.squerItem::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30%;
+    background: #222222;
+    color: #222222;
+    height: 2px;
+    left: 0;
+}
+.squerItem::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30%;
+    background: #222222;
+    color: #222222;
+    height: 2px;
+    right: 0;
+}
+.squerItem {
+    border: 1px solid #000;
+    border-top: none;
+    padding: 60px 35px;
+    position: relative;
+}
+
+.squerContent h3 {
+    color: #e74c3c;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.squerContent h4 {
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.squerIcon {
+    position: absolute;
+    top: -35px;
+    left: 110px;
+    font-size: 45px;
+    color: #000;
+}
+@media only screen and (max-width: 575px) {
+    .squerIcon {
+        left: 100px;
+    }
+    .squerItem {
+        margin-top: 25px;
+    }
+}
+/*************************
+End of stats-area
+**************************/
+
+#portfolio h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: inherit;
+}
+.mymixcon .mix{
+    float: left;
+    margin: 10px;
+    display: block
+}
+button {
+    padding: 10px;
+    margin: 30px 0;
+}
+div#portfolio button {
+    background: transparent;
+    border: 1px solid #BDC3C7;
+    color: #BDC3C7;
+}
+div#portfolio button:focus {
+    background: rgba(246, 71, 71, 1);
+    color: #fff;
+}
+button.mixitup-control-active {
+    background: rgba(246, 71, 71, 1)!important;
+    border:2px solid #F64747;
+    color: #fff!important;
+}
+
+.mix{
+    position: relative;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.mix img{
+    height: 250px;
+    width: 250px;
+}
+.mix:hover .image {
+  opacity: 0.3;
+}
+
+.mix:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background: rgba(246, 71, 71, 1);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/*************************
+End of portfolio area
+**************************/
+
+
+ footer{
+     background: #222222;
+     padding: 10px 0;
+     text-align: center;
+     color: #ffffff;
+ }
+/**************************
+End of footer area
+**************************/
+
+
