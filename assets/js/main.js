@@ -1,10 +1,10 @@
 $(window).on("load", function() {
 
-//     $(".loader .inner").fadeOut(1000, function() {
-//         $(".loader").fadeOut(750);
-//     });
+    $(".loader .inner").fadeOut(1000, function() {
+        $(".loader").fadeOut(750);
+    });
 
-// })
+})
 /*******************End of loader area***************/
 
 $(document).ready(function(){
